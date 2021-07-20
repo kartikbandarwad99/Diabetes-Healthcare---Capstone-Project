@@ -2,7 +2,6 @@ from flask import Flask,render_template,url_for,request
 import pandas as pd 
 import numpy as np
 import pickle
-from model import imputation,scaler
 
 model = pickle.load(open('model.pkl', 'rb'))
 scale = pickle.load(open('scale.pkl', 'rb'))
